@@ -1,0 +1,34 @@
+
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 height-page scanDiv bg-colour keypadclass" style="">
+  <div class="alignbuttons ">
+    <div class="img-div">
+      <form method="POST" action="print_badge_open.php">
+         <div class="col-xs-12 bgwhite"><h2 class="changelabel select-heading">{{title}}</h2><br>
+         <input type="text" name="barcode" id="barcode" pattern="[0-9]*" onkeyup="if (/[^0-9]/g.test(this.value)) this.value = this.value.replace(/[^0-9]/g,'')" inputmode="numeric" readonly class="form-control bg-colour" value="{{inputvalue}}" required="">
+         </div>
+          <div class="keypad" style="">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('1')" value="1">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('2');" value="2">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('3');" value="3">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('+');" value="+">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('4');" value="4">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('5');" value="5">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('6');" value="6">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('-');" value="-">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('7');" value="7">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('8');" value="8">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('9');" value="9">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('*');" value="*">
+           
+            <input type="button" class="btn" name="back" id="back" (click)="clearAll();" value="Clear">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('0');" value="0">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('=');" value="=">
+            <input type="button" class="btn " name="back" id="back" (click)="insertcode('/');" value="/">
+            
+            <!--<input type = "button" class="btn backarrow" name = "back" id="back" onclick="deleteone();" value = "<-">-->
+         </div>
+         
+ </form></div>
+      
+     </div>
+   </div>
