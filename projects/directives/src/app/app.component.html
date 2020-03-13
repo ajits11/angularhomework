@@ -33,12 +33,9 @@
           <td>{{qt.qty*qt.unitPrice}}</td>
         </tr>
 		<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td>Total</td>
-		<td>{{totalAmount}}</td>
+		
+		<td colspan="5" style="text-align: right;">Total :</td>
+		<td><b>{{totalAmount}}</b></td>
 		<tr>
       </table>
     </div>
@@ -51,9 +48,10 @@
 
   <div class="row">
     <div class="col-md-12">
-      <input type="text" value="Okay" [ngClass]="{'text-muted' : true, 'alert' : true}">
-      <input type="text" [ngStyle]="st" value="In Iot">
+      <!--<input type="text" value="Okay" [ngClass]="{'text-muted' : true, 'alert' : true}">
+      <input type="text" [ngStyle]="st" value="In Iot">-->
       <input type="text" appMagic>
+      <input type="text" appInputhover>
     </div>
   </div>
 

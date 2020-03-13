@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MagicDirective } from './magic.directive';
+import { InputhoverDirective } from './inputhover.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MagicDirective
+    MagicDirective,
+    InputhoverDirective
   ],
   imports: [
     BrowserModule
