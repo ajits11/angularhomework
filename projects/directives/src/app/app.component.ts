@@ -14,7 +14,7 @@ export class AppComponent {
     border : '1px solid red',
     color : 'red'
   }
-
+ 
   quotations = [
     { id: 1, to: 'Android', from: 'Android', qty: 3, unitPrice: 50 },
     { id: 2, to: 'Google', from: 'Microsoft', qty: 5, unitPrice: 7850 },
