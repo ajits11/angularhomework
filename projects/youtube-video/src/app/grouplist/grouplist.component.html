@@ -4,13 +4,13 @@
    
         <div class="col-lg-6" style="border:1px  solid red;">
             <ul class="list-group">
-                <li class="list-group-item" *ngFor="let videos of listofvideos">{{videos.title}}</li>
+                <li class="list-group-item" *ngFor="let videos of listofvideos" (click)="playVideo(videos.url)">{{videos.title}}</li>
                 
             </ul>
         </div>
         <div class="col-lg-6" style="border:1px  solid blue;">
-            Test
+            <iframe [src]="safeSrc" width="520" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen
+      allowfullscreen></iframe>
         </div>
-    
     </div>
 </div>
